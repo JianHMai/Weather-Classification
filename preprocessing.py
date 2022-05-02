@@ -28,7 +28,7 @@ for data in os.listdir(cwd):
     directory2 = glob.glob(directory)
     for img in directory2:
         # Rotate images of up to 50 degrees
-        datagen = ImageDataGenerator(rotation_range=50, fill_mode='nearest')
+        datagen = ImageDataGenerator(rotation_range=40, fill_mode='nearest')
         
         # Load original image
         img = load_img(img)
